@@ -16,18 +16,49 @@
             background-color: rgba(0, 0, 0, 0.479);
             padding: 20px;
             border-radius: 4px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(5,1fr);
+            grid-template-areas: "in in "
+                                  "frow frow"
+                                  "scrow scrow"
+                                  "lsrow lsrow"
+                                  "las las";
+            
+            
 
+        }
+        .frow{
+            margin-top: 10px;
+            grid-area: frow;
         }
         .contaier input {
             padding: 10px;
             outline: lime;
         }
         .contaier button{
-            padding: 10px 20px;
+            padding: 10px ;
             background-color: red;
             color: whitesmoke;
+            width: 50px;
             font-family: fantasy;
             border-radius: 4px;
+        }
+        #fnumber{
+            grid-area: in;
+
+        }
+        .scrow{
+            grid-area: scrow;
+        }
+        .lsrow{
+            grid-area: lsrow;
+        }
+        .las { 
+            grid-area: las  ;
+        }
+        #zero { 
+            width: 157px;
         }
 
     </style>
@@ -35,20 +66,29 @@
 <body>
     <div class="contaier">
     <input type="text" id = "fnumber" ><br><br>
-    <button id="plus">Plus</button>
-    <button id="Min">Min</button>
-    <button id="equ">Equal</button>
+    <div class="frow">
+    <button id="plus">+</button>
+    <button id="Min">-</button>
+    <button id="equ">=</button>
     <button id="C">C</button>
     <br><br>
+    </div>
+    <div class="scrow">
     <button id="one">1</button>
     <button id="two">2</button>
-    <button id="three">3</button><br><br>
+    <button id="three">3</button>
     <button id="four">4</button>
+    </div>
+    <div class="lsrow">
     <button id="five">5</button>
-    <button id="six">6</button><br><br>
+    <button id="six">6</button>
     <button id="seven">7</button>
-    <button id="eight">8</button>
+    <button id="eight">8</button> 
+    </div>
+    <div class="las">
+    <button id="zero">0</button>
     <button id="nine">9</button>
+    </div>
     <p id="result"></p>
 <script src="main.js"></script>
 </body>

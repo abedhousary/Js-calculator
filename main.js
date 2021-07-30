@@ -4,6 +4,7 @@ let fnumber = document.getElementById("fnumber");
 let snumber = document.getElementById("snumber");
 let currentnumber = 0 ;
 let mode = "";
+
 plus.onclick = function (){
     currentnumber += +fnumber.value
     fnumber.value = ""  ;
@@ -54,5 +55,9 @@ eight.onclick = function (){
 }
 nine.onclick = function (){
     fnumber.value += "9"  ;
+}
+
+zero.onclick = function (){
+    fnumber.value += "0"  ;
 }
 
