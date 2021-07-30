@@ -5,63 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Js calculator</title>
-    <style>
-        body{
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            display: flex;
-        }
-        .contaier{
-            background-color: rgba(0, 0, 0, 0.479);
-            padding: 20px;
-            border-radius: 4px;
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            grid-template-rows: repeat(5,1fr);
-            grid-template-areas: "in in "
-                                  "frow frow"
-                                  "scrow scrow"
-                                  "lsrow lsrow"
-                                  "las las";
-            
-            
-
-        }
-        .frow{
-            margin-top: 10px;
-            grid-area: frow;
-        }
-        .contaier input {
-            padding: 10px;
-            outline: lime;
-        }
-        .contaier button{
-            padding: 10px ;
-            background-color: red;
-            color: whitesmoke;
-            width: 50px;
-            font-family: fantasy;
-            border-radius: 4px;
-        }
-        #fnumber{
-            grid-area: in;
-
-        }
-        .scrow{
-            grid-area: scrow;
-        }
-        .lsrow{
-            grid-area: lsrow;
-        }
-        .las { 
-            grid-area: las  ;
-        }
-        #zero { 
-            width: 157px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="contaier">
@@ -90,6 +34,6 @@
     <button id="nine">9</button>
     </div>
     <p id="result"></p>
-<script src="main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

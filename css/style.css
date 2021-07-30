@@ -1,0 +1,66 @@
+body {
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  display: flex;
+  background-color: #c7ecee;
+}
+.contaier {
+  background: linear-gradient(0deg, #7ed6df, #22a6b3, #7ed6df);
+  padding: 20px;
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "in in "
+    "frow frow"
+    "scrow scrow"
+    "lsrow lsrow"
+    "las las";
+  box-shadow: 0px 0px 10px 0px black;
+}
+.frow {
+  margin-top: 10px;
+  grid-area: frow;
+}
+.contaier input {
+  padding: 10px;
+  outline: lime;
+  font-weight: 900;
+  border-color: aqua;
+}
+.contaier button {
+  padding: 10px;
+  background: linear-gradient(to right, #17c0eb, #7efff5, #17c0eb);
+  transition: 0.4s;
+  background-size: 200%;
+  color: black;
+  width: 50px;
+  font-family: fantasy;
+  border-radius: 4px;
+  cursor: pointer;
+  border-color: aqua;
+}
+.contaier button:hover {
+  background-position: right;
+}
+#fnumber {
+  margin-top: 10px;
+  grid-area: in;
+}
+.scrow {
+  margin-top: 10px;
+  grid-area: scrow;
+}
+.lsrow {
+  margin-top: 10px;
+  grid-area: lsrow;
+}
+.las {
+  margin-top: 10px;
+  grid-area: las;
+}
+#zero {
+  width: 157px;
+}
